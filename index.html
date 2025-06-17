@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <span class="prompt">&gt;</span>
+            <h1>Generate a secure password</h1>
+            <div class="theme-toggle">
+                <div class="toggle-switch">
+                    <div class="toggle-moon">🌙</div>
+                    <div class="toggle-sun">☀️</div>
+                    <div class="toggle-slider"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="password-display">
+            <input type="text" id="passwordOutput" value="QmdkJcSZcUMfAH6yOQqt" readonly>
+            <button class="copy-btn" id="copyBtn">📋</button>
+        </div>
+
+        <div class="dotted-line"></div>
+
+        <div class="customize-section">
+            <h2>Customize your password</h2>
+            
+            <div class="options-container">
+                <div class="checkboxes">
+                    <div class="checkbox-item">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="uppercase" checked>
+                            <span class="checkmark"></span>
+                            Uppercase
+                        </label>
+                    </div>
+                    <div class="checkbox-item">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="lowercase" checked>
+                            <span class="checkmark"></span>
+                            Lowercase
+                        </label>
+                    </div>
+                    <div class="checkbox-item">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="numeric" checked>
+                            <span class="checkmark"></span>
+                            Numeric
+                        </label>
+                    </div>
+                    <div class="checkbox-item">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="symbols">
+                            <span class="checkmark"></span>
+                            Symbols
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="length-section">
+                    <div class="length-label">
+                        <span>Password</span>
+                        <span>Length:</span>
+                    </div>
+                    <input type="number" id="lengthInput" value="20" min="4" max="50">
+                    <div class="slider-container">
+                        <input type="range" id="lengthSlider" min="4" max="50" value="20">
+                        <div class="slider-thumb"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button class="generate-btn" id="generateBtn">Generate</button>
+
+        <div class="footer">
+            <span>Made with ❤️ by Aakash Sharma</span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
